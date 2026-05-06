@@ -20,6 +20,22 @@ document.addEventListener('click', function (e) {
   }
 });
 
+/* ── MOBILE MENU TOGGLE ──────────────────────────────────── */
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const hamburger = document.querySelector('.hamburger');
+  menu.classList.toggle('active');
+  hamburger.classList.toggle('active');
+}
+
+// Cerrar el menú automáticamente al hacer clic en un enlace
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.remove('active');
+    document.querySelector('.hamburger').classList.remove('active');
+  });
+});
+
 /* ── SCROLL ANIMATIONS (fade-in) ────────────────────────── */
 const fadeEls = document.querySelectorAll('.fade-in');
 

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Radiadores Campanella | Taller de Radiadores y Aire Acondicionado en Córdoba</title>
+    <title>Radiadores Campanella</title>
+    <link rel="icon" href="recursos/logoRadiadores.ico" type="image/x-icon" />
     <meta name="description" content="Especialistas en reparación de radiadores, carga de aire acondicionado y calefacción en Córdoba. Más de 40 años de trayectoria técnica." />
     <meta name="keywords" content="radiadores Córdoba, reparación de radiadores, aire acondicionado automotor, calefacción autos, taller mecánico Córdoba" />
     <meta name="robots" content="index, follow" />
@@ -123,12 +124,26 @@
         </a>
         <ul class="nav-links">
             <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#productos">Productos</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#horarios">Horarios</a></li>
             <li><a href="#contacto" class="nav-cta">Contactar</a></li>
         </ul>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#servicios">Servicios</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#faq">FAQ</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#contacto" class="nav-cta">Contactar</a>
+    </div>
 </header>
 
 <main>
@@ -180,22 +195,77 @@
                 <article class="service-card fade-in">
                     <span class="service-icon">🌡️</span>
                     <h3>Radiadores</h3>
-                    <p>Reparación, limpieza y venta de radiadores para todo tipo de vehículos.</p>
+                    <p>Reparación, limpieza y venta de radiadores para autos, camionetas y camiones.</p>
                 </article>
                 <article class="service-card fade-in" style="transition-delay:.1s">
                     <span class="service-icon">❄️</span>
                     <h3>Aire Acondicionado</h3>
-                    <p>Carga de gas, diagnóstico de fugas y cambio de compresores.</p>
+                    <p>Carga de gas, diagnóstico de fugas y cambio de compresores para A/C automotor.</p>
                 </article>
                 <article class="service-card fade-in" style="transition-delay:.2s">
                     <span class="service-icon">🔥</span>
                     <h3>Calefacción</h3>
-                    <p>Reparación integral del circuito térmico y paneles de calefacción.</p>
+                    <p>Reparación integral del circuito térmico y paneles de calefacción automotor.</p>
                 </article>
                 <article class="service-card fade-in" style="transition-delay:.3s">
                     <span class="service-icon">🚛</span>
                     <h3>Línea Pesada</h3>
-                    <p>Servicio especializado para camiones, intercoolers y maquinaria.</p>
+                    <p>Servicio especializado para camiones, intercoolers y maquinaria pesada.</p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- ══ PRODUCTOS ═══════════════════════════════════════════════ -->
+    <div class="services-wrap" id="productos">
+        <section>
+            <div class="section-header fade-in">
+                <span class="section-tag">Productos</span>
+                <h2 class="section-title">Repuestos y <span class="accent">Componentes</span></h2>
+                <p class="section-copy">Consultá disponibilidad de piezas para radiadores, calefacción y aire acondicionado en Córdoba. Sin precios ni stock, ofrecemos referencias generales para distintos vehículos y marcas.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card fade-in">
+                    <img src="recursos/radiadoragua.png" alt="Radiadores de agua" class="product-img">
+                    <h3>Radiadores de agua</h3>
+                    <p>Radiadores de agua para Kango 1.6, Corsa Classic, Spirit, Clio y Megane. Ideal para mantención térmica y recambios confiables.</p>
+                    <a href="https://wa.me/543516687385?text=Hola%21%20Queria%20consultar%20disponibilidad%20de%20los%20Radiadores%20de%20agua" class="btn-primary" target="_blank" rel="noopener">Consultar disponibilidad</a>
+                </article>
+                <article class="service-card fade-in" style="transition-delay:.1s">
+                    <img src="recursos/radiadorcalefaccion.png" alt="Radiadores de calefacción" class="product-img">
+                    <h3>Radiadores de calefacción</h3>
+                    <p>Unidades de calefacción compatibles con Gol, Trend, Senda, Palio y vehículos familiares de uso urbano.</p>
+                    <a href="https://wa.me/543516687385?text=Hola%21%20Queria%20consultar%20disponibilidad%20de%20los%20Radiadores%20de%20calefaccion" class="btn-primary" target="_blank" rel="noopener">Consultar disponibilidad</a>
+                </article>
+                <article class="service-card fade-in" style="transition-delay:.2s">
+                    <img src="recursos/condensador.png" alt="Condensadores" class="product-img">
+                    <h3>Condensadores</h3>
+                    <p>Condensadores para sistemas de A/C de Chevrolet, Fiat, Volkswagen y Toyota, con asesoramiento en instalación.</p>
+                    <a href="https://wa.me/543516687385?text=Hola%21%20Queria%20consultar%20disponibilidad%20de%20los%20Condensadores" class="btn-primary" target="_blank" rel="noopener">Consultar disponibilidad</a>
+                </article>
+                <article class="service-card fade-in" style="transition-delay:.3s">
+                    <img src="recursos/compresores.png" alt="Compresores de aire" class="product-img">
+                    <h3>Compresores de aire</h3>
+                    <p>Compresores para aire acondicionado automotor en Corsa, Palio, Kangoo, EcoSport y otros modelos populares.</p>
+                    <a href="https://wa.me/543516687385?text=Hola%21%20Queria%20consultar%20disponibilidad%20de%20los%20Compresores" class="btn-primary" target="_blank" rel="noopener">Consultar disponibilidad</a>
+                </article>
+                <article class="service-card fade-in" style="transition-delay:.4s">
+                    <img src="recursos/electroventilador.png" alt="Electroventiladores" class="product-img">
+                    <h3>Electroventiladores</h3>
+                    <p>Electroventiladores y kits eléctricos para autos y camionetas, compatibles con Peugeot, Ford, Mercedes y más.</p>
+                    <a href="https://wa.me/543516687385?text=Hola%21%20Queria%20consultar%20disponibilidad%20de%20los%20Electroventiladores" class="btn-primary" target="_blank" rel="noopener">Consultar disponibilidad</a>
+                </article>
+                <article class="service-card fade-in" style="transition-delay:.5s">
+                    <img src="recursos/evaporador.png" alt="Evaporadores" class="product-img">
+                    <h3>Evaporadores</h3>
+                    <p>Evaporadores para sistemas de aire acondicionado automotor, compatibles con diversos modelos de autos y camionetas.</p>
+                    <a href="https://wa.me/543516687385?text=Hola%21%20Queria%20consultar%20disponibilidad%20de%20los%20Evaporadores" class="btn-primary" target="_blank" rel="noopener">Consultar disponibilidad</a>
+                </article>
+                <article class="service-card fade-in" style="transition-delay:.6s">
+                    <img src="recursos/logo.png" alt="Refrigerantes" class="product-img">
+                    <h3>Refrigerantes</h3>
+                    <p>Refrigerantes y gases para carga de sistemas de aire acondicionado, con opciones ecológicas y tradicionales.</p>
+                    <a href="https://wa.me/543516687385?text=Hola%21%20Queria%20consultar%20disponibilidad%20de%20los%20Refrigerantes" class="btn-primary" target="_blank" rel="noopener">Consultar disponibilidad</a>
                 </article>
             </div>
         </section>
@@ -323,7 +393,7 @@
                         <span class="icon">📞</span>
                         <div class="text">
                             <strong>Teléfono / WhatsApp</strong>
-                            <a href="tel:+543515731625" style="color:#CCC;text-decoration:none">351 573-1625</a>
+                            <a href="tel:+543516687385" style="color:#CCC;text-decoration:none">351 668 7385</a>
                         </div>
                     </div>
                     <div class="address-line">
