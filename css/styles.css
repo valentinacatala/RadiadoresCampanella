@@ -651,7 +651,7 @@ footer {
   section              { padding:70px 20px; }
 
   .about-grid          { grid-template-columns:1fr; gap:48px; }
-  .about-img-block img { aspect-ratio:16/9; }
+  .about-img-block img { aspect-ratio: 4/5; }
   .about-badge         { bottom:-14px; right:10px; }
 
   .horarios-wrap       { padding:70px 20px; }
